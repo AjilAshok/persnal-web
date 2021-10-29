@@ -196,20 +196,31 @@
 		rules: {
 			name: {
 				required: true,
-				minlength: 5,
-				maxlength: 30
+				minlength: 3,
+				maxlength: 30,
+				normalizer:function( value ){
+					return $.trim(value)
+				}
+				
 			},
 			email: {
 				required: true,
-				email: true
+				email: true,
+
 			},
 			subject:{
 				required: true,
-				minlength: 5
+				minlength: 5,
+				normalizer:function( value ){
+					return $.trim(value)
+				}
 			},
 			message:{
 				required: true,
-				minlength: 5
+				minlength: 5,
+				normalizer:function( value ){
+					return $.trim(value)
+				}
 			}
 		}
 	});

@@ -212,32 +212,3 @@
   });
 
 })()
-// function Per(){
-//   var username = $('#name').val()
-//   var pattern=/^[a-zA-Z-()]+(\s+[-a-zA-Z- ()]+)*$/
-//   if(username==""){
-//    $('#peer').html("Enter The Name");
-//       return false
-//   }else if(username.match(pattern)){
-//    $('#peer').html("");
-//      return true
-//   }
-  
-//  }
- 
-// function mal(){
-//   var email = $('#email').val()
-//   var pattern=/^[^]+@[^]+\.[a-z]{2,3}$/
-//   if(email==""){
-//    $('#maal').html("Enter Valid Email");
-//      return false
-//   }else if(email.match(pattern)){
-//    $('#maal').html("");
-//      return true
-//   }else{
-//    $('#maal').html("Enter Correct Email");
-//      return false
-//   }
- 
-  
-//  }
