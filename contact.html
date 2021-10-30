@@ -199,8 +199,7 @@
 				required: true,
 				minlength: 3,
 				maxlength: 30,
-			 
-				
+        lettersonly:true,
 				normalizer:function( value ){
 					return $.trim(value)
 				}
@@ -227,6 +226,9 @@
 			}
 		}
 	});
+  jQuery.validator.addMethod("lettersonly", function(value, element) {
+    return this.optional(element) || /^[a-z," "]+$/i.test(value);
+}, "Only letters and spaces are allowed");
 	
 </script>
 
